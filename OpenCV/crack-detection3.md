@@ -55,5 +55,5 @@ rate = (crack_count / 170)*100
 print("Crack rate:", round(rate,2),"%")
 
 
-# 결론
+# 결과
 <img width="1676" alt="Screenshot 2023-05-27 at 21 31 46" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/c49d0cf0-97ce-41e5-b589-1d927d4929b3">
