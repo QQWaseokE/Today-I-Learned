@@ -6,3 +6,4 @@ MVC와의 차이점은 컨트롤러 대신 프리젠터를 사용한다는 것�
 https://www.youtube.com/watch?v=LyYRTcyKJIU
 
 # 예시
+![KakaoTalk_Photo_2023-06-08-23-16-41](https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/1a905066-e799-495c-920b-783e4d55c3a1)
