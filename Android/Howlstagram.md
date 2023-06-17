@@ -1,4 +1,6 @@
-# activity_login.xml
+# 2023.05.23
+
+#### activity_login.xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -79,6 +81,6 @@
 
 </RelativeLayout>
 
-# 오류 발생
+### 오류 발생
 <img width="1689" alt="Screen Shot 2023-05-23 at 4 39 13" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/5b3e9f2f-07d7-41c0-a378-dc0aee9db1fc">
 
