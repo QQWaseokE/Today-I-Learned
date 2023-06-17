@@ -14,3 +14,13 @@ https://www.youtube.com/watch?v=1nQqrP336_0
 
 ### 실습
 <img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/af37e978-ba67-4445-bb41-8e05eda6b21f">
+
+# 2023.06.12
+
+오늘은 기본세팅에 이어 Mvvm세팅 중간까지 해보았다.
+
+### 참조
+https://www.youtube.com/watch?v=Dcc9-cbHdjk
+
+### 실습
+<img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/0cc73442-c662-49d9-a338-3dd64c734c6d">
