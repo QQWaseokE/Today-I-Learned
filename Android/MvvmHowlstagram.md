@@ -24,3 +24,13 @@ https://www.youtube.com/watch?v=Dcc9-cbHdjk
 
 ### 실습
 <img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/0cc73442-c662-49d9-a338-3dd64c734c6d">
+
+# 2023.06.15
+
+오늘은 저번에 하던 Mvvm세팅을 완료하고 EmailLogin파트를 중간까지 해보았다.
+
+### 참조
+https://www.youtube.com/watch?v=cqjI6h5L3bc
+
+### 실습
+<img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/5ed59a80-d594-4fb6-87e8-9c2bd3fa1491">
