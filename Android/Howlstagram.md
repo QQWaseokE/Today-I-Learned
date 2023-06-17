@@ -103,3 +103,10 @@ Howlstagram_1.md에서 발생했던 오류를 모두 해결하고 로그인 화�
 ### 실습
 <img width="1728" alt="Screenshot 2023-06-05 at 23 23 22" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/d0f6c8a1-b78c-44d2-b25d-e8246495ffe0">
 
+# 2023.06.07
+
+버전 안맞는 오류를 내내 수정중... 아직 해결이 되지 못했다...
+가장 최근 것도 1~2년 전 글이라 그 마저도 상위 버전이 나와서 애를 먹고있다.
+
+# 끝내 해결하지 못하고 잠시 휴전...
+
