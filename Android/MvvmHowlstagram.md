@@ -4,3 +4,13 @@
 
 ## 참조
 https://www.youtube.com/watch?v=1nQqrP336_0
+
+# 2023.06.11
+
+로그인화면은 독학으로 뜯어보며 의미를 유추해 보기로 하고 우선은 화면을 성공적으로 띄우는데까지 완료했다.
+
+### 참조
+https://www.youtube.com/watch?v=1nQqrP336_0
+
+### 실습
+<img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/af37e978-ba67-4445-bb41-8e05eda6b21f">
