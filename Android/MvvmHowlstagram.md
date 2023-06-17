@@ -34,3 +34,18 @@ https://www.youtube.com/watch?v=cqjI6h5L3bc
 
 ### 실습
 <img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/5ed59a80-d594-4fb6-87e8-9c2bd3fa1491">
+
+# 2023.06.17
+
+EmailLogin파트를 완료하여 Signup or Signin by Email을 클릭하면 Phone Number을 입력하는 화면으로 전환되고
+
+Firebase에는 계정이 등록되는 과정을 실습해보았다.
+
+### 참조
+https://www.youtube.com/watch?v=cqjI6h5L3bc
+
+### 실습
+<img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/c7f2d56c-1b24-4093-bf4a-7e43b7a05c44">
+
+<img width="1311" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/e0ba351b-a36d-4473-83d4-5a96a4b3db21">
+
