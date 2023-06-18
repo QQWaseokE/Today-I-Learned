@@ -61,7 +61,7 @@ https://www.youtube.com/watch?v=cqjI6h5L3bc
 
 # 2023.06.18
 
-Google Login파트를 완료하여 Google Login 버튼을 누르면 구글 연동 화면으로 넘어가고 계정을 선택하면 로그인과 핸드폰 번호를 입력하는 창으로 넘어가고
+Google Login파트를 완료하여 Google Login 버튼을 누르면 구글 연동 화면으로 넘어가고 구글 계정을 입력하거나 선택하면 로그인이 되어 핸드폰 번호를 입력하는 창으로 넘어가고
 
 Firebase에도 계정이 등록되는 과정을 실습해보았다.
 
