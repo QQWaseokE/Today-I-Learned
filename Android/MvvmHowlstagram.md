@@ -59,3 +59,19 @@ https://www.youtube.com/watch?v=cqjI6h5L3bc
 
 ***
 
+# 2023.06.18
+
+Google Login파트를 완료하여 Google Login 버튼을 누르면 구글 연동 화면으로 넘어가고 계정을 선택하면 로그인과 핸드폰 번호를 입력하는 창으로 넘어가고
+
+Firebase에도 계정이 등록되는 과정을 실습해보았다.
+
+### 참조
+https://www.youtube.com/watch?v=_3hzHvQAu6s&loop=0
+
+### 실습
+<img width="1728" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/56e9167f-65b2-409d-95d0-c65ccff9e57c">
+
+<img width="1724" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/0029a8ce-c93c-4d12-b408-c1cc8a2c86e7">
+
+***
+
