@@ -80,3 +80,9 @@ https://www.youtube.com/watch?v=_3hzHvQAu6s&loop=0
 시험 기간으로 휴전...
 
 ***
+
+# 2023.06.20
+
+시험 기간으로 휴전...
+
+***
