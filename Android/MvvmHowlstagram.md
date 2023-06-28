@@ -93,3 +93,14 @@ https://www.youtube.com/watch?v=_3hzHvQAu6s&loop=0
 내일부터 또 달려본다.
 
 ***
+
+# 2023. 06.23 ~ 06.28
+
+Developer Facebook에서 패키지 명 오류가 발생하여 구글링 및 오픈채팅 방에 질의를 하였으나 해답을 찾지 못하여 곤욕을 치르는 중이다.
+
+### 참조
+https://www.youtube.com/watch?v=gN3nUMVfoZc&t=104s
+
+### 실습
+<img width="1499" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/31bbdfae-6c44-41aa-ab15-af84758f2211">
+
