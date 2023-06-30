@@ -104,3 +104,11 @@ https://www.youtube.com/watch?v=gN3nUMVfoZc&t=104s
 ### 실습
 <img width="1499" alt="image" src="https://github.com/QQWaseokE/Today-I-Learned/assets/127533265/31bbdfae-6c44-41aa-ab15-af84758f2211">
 
+# 2023.06.30
+
+구글링을 하여 패키지명을 바꾼 뒤 시도해보았으나 아직 미해결되었다.
+더 조사를 해봐야겠다...
+
+### 참조
+https://salmonpack.tistory.com/20
+
