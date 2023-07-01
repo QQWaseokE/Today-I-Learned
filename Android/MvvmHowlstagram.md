@@ -94,7 +94,7 @@ https://www.youtube.com/watch?v=_3hzHvQAu6s&loop=0
 
 ***
 
-# 2023. 06.23 ~ 06.28
+# 2023.06.23 ~ 06.28
 
 Developer Facebook에서 패키지 명 오류가 발생하여 구글링 및 오픈채팅 방에 질의를 하였으나 해답을 찾지 못하여 곤욕을 치르는 중이다.
 
@@ -111,4 +111,13 @@ https://www.youtube.com/watch?v=gN3nUMVfoZc&t=104s
 
 ### 참조
 https://salmonpack.tistory.com/20
+
+***
+
+# 2023.07.01
+
+포기해야하나 싶을 지경이다. 아직 해결이 안되었다.
+중꺽마...
+
+***
 
