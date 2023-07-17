@@ -164,3 +164,8 @@ https://salmonpack.tistory.com/20
 ...
 
 ***
+
+# 2023.07.17
+
+오늘도 패키지 명을 바꾸어(waseokestagram으로) 시도해보았지만 실패했다.
+영상을 다시 보던 중 액티비티 클래스 이름에 .LoginActivity를 입력하지 않아서 오류가 났었나 싶어 다시 패키지명을 mvvmhowlstagram으로 돌리고 시도해보았으나 여전히 되지 않았다...
