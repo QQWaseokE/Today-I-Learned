@@ -1,5 +1,5 @@
-s = 0
+import turtle as t
 
-for x in range(1, 11):
-    s = s + x
-    print(x, s)
+t.shape("turtle")
+
+t.fd(100)
