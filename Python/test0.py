@@ -1,10 +1,10 @@
 import turtle as t
 
-n = 50
+angle = 80
 t.bgcolor("black")
-t.color("green")
-t.speed(10)
+t.color("yellow")
+t.speed(0)
 
-for x in range(n):
-    t.circle(80)
-    t.lt(360 / n)
+for x in range(200):
+    t.fd(x)
+    t.left(angle)
