@@ -1,12 +1,10 @@
-import time
+import random
+import turtle as t
 
-input("엔터를 누르고 20초를 셉니다.")
-start = time.time()
+t.shape("turtle")
+t.speed(0)
 
-input("20초 후에 다시 엔터를 누릅니다.")
-end = time.time()
-
-result = end - start
-
-print("실제 시간", result, "초")
-print("차이", abs(result - 20), "초")
+for x in range(500):
+    a = random.randint(1, 360)
+    t.right(a)
+    t.fd(50)
