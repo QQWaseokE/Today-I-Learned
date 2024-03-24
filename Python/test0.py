@@ -1,9 +1,10 @@
 import turtle as t
 
-n = 5
-t.color("purple")
-t.begin_fill()
+n = 50
+t.bgcolor("black")
+t.color("green")
+t.speed(10)
+
 for x in range(n):
-    t.fd(50)
+    t.circle(80)
     t.lt(360 / n)
-t.end_fill()
