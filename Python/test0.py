@@ -1,10 +1,12 @@
-import turtle as t
+import time
 
-angle = 80
-t.bgcolor("black")
-t.color("yellow")
-t.speed(0)
+input("엔터를 누르고 20초를 셉니다.")
+start = time.time()
 
-for x in range(200):
-    t.fd(x)
-    t.left(angle)
+input("20초 후에 다시 엔터를 누릅니다.")
+end = time.time()
+
+result = end - start
+
+print("실제 시간", result, "초")
+print("차이", abs(result - 20), "초")
