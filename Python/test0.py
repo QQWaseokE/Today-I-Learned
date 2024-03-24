@@ -6,5 +6,5 @@ t.speed(0)
 
 for x in range(500):
     a = random.randint(1, 360)
-    t.right(a)
+    t.setheading(a)
     t.fd(50)
