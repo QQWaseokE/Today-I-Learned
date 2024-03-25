@@ -1,14 +1,6 @@
-import random
-import turtle as t
-
-a = random.randint(1, 30)
-b = random.randint(1, 30)
-
-print(a, "+", b, "=")
-x = input()
-c = int(x)
-
-if a + b == c:
-    print("천재!")
-else:
-    print("바보")
+s = 0
+x = 1
+while x <= 10:
+    s = s + x
+    print(x, s)
+    x += 1
