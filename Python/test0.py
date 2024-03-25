@@ -1,14 +1,36 @@
 import turtle as t
 
-t.bgcolor("black")
-t.speed(0)
 
-for x in range(200):
-    if x % 3 == 0:
-        t.color("red")
-    elif x % 3 == 1:
-        t.color("yellow")
-    elif x % 3 == 2:
-        t.color("blue")
-    t.fd(x * 2)
-    t.left(119)
+def turn_right():
+    t.setheading(0)
+    t.fd(10)
+
+
+def turn_up():
+    t.setheading(90)
+    t.fd(10)
+
+
+def turn_left():
+    t.setheading(180)
+    t.fd(10)
+
+
+def turn_down():
+    t.setheading(270)
+    t.fd(10)
+
+
+def blank():
+    t.clear()
+
+
+t.shape("turtle")
+t.speed(0)
+t.onkeypress(turn_right, "Right")
+t.onkeypress(turn_up, "Up")
+t.onkeypress(turn_down, "Down")
+t.onkeypress(turn_left, "Left")
+t.onkeypress(blank, "Escape")
+t.listen()
+t.mainloop()
