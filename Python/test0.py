@@ -1,9 +1,9 @@
 def sum_fun(n):
-    s = 0
+    s = 1
     for x in range(1, n + 1):
-        s = s + x
+        s = s * x
     return s
 
 
+print(sum_fun(5))
 print(sum_fun(10))
-print(sum_fun(100))
