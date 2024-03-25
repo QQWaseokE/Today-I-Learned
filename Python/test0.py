@@ -1,15 +1,9 @@
-def square(a):
-    c = a * a
-    return c
+def sum_fun(n):
+    s = 0
+    for x in range(1, n + 1):
+        s = s + x
+    return s
 
 
-def triangle(a, h):
-    c = a * h / 2
-    return c
-
-
-s1 = 4
-s2 = square(s1)
-print(s1, s2)
-
-print(triangle(3, 4))
+print(sum_fun(10))
+print(sum_fun(100))
