@@ -1,7 +1,6 @@
-def hello():
-    print("Hello Python!")
+def hello(name):
+    print("Hello", name)
 
 
-hello()
-hello()
-hello()
+hello("waseoke")
+hello("Sheet")
