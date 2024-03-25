@@ -1,11 +1,14 @@
 import random
 import turtle as t
 
-t.shape("turtle")
-t.speed(0)
+a = random.randint(1, 30)
+b = random.randint(1, 30)
 
-for x in range(500):
-    a = random.randint(1, 360)
-    b = random.randint(1, 20)
-    t.setheading(a)
-    t.fd(b)
+print(a, "+", b, "=")
+x = input()
+c = int(x)
+
+if a + b == c:
+    print("천재!")
+else:
+    print("바보")
