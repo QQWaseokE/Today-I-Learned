@@ -1,41 +1,25 @@
 import random
+import time
 
+w = ["cat", "dog", "fox", "monkey", "mouse", "panda", "frog", "snake", "wolf"]
+n = 1
+print("[타자게임] 준비되면 엔터!")
+input()
+start = time.time()
 
-def make_question():
-    a = random.randint(1, 40)
-    b = random.randint(1, 20)
-    op = random.randint(1, 3)
-
-    q = str(a)
-
-    if op == 1:
-        q = q + "+"
-    if op == 2:
-        q = q + "-"
-    if op == 3:
-        q = q + "*"
-
-    q = q + str(b)
-
-    return q
-
-
-sc1 = 0
-sc2 = 0
-
-for x in range(5):
-    q = make_question()
+q = random.choice(w)
+while n <= 5:
+    print("문제", n)
     print(q)
-    ans = input("=")
-    r = int(ans)
-
-    if eval(q) == r:
-        print("정답!")
-        sc1 = sc1 + 1
+    x = input()
+    if q == x:
+        print("PASS!")
+        n = n + 1
+        q = random.choice(w)
     else:
-        print("오답!")
-        sc2 = sc2 + 1
+        print("Wrong! Again!")
 
-print("정답", sc1, "오답", sc2)
-if sc2 == 0:
-    print("당시은 천재입니다!")
+end = time.time()
+result = end - start
+result = format(result, ".2f")
+print("TIME:", result, "초")
