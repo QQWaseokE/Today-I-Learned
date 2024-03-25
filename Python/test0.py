@@ -1,9 +1,24 @@
-def sum_fun(n):
-    s = 1
-    for x in range(1, n + 1):
-        s = s * x
-    return s
+import turtle as t
 
 
-print(sum_fun(5))
-print(sum_fun(10))
+def polygon(n):
+    for x in range(n):
+        t.fd(50)
+        t.left(360 / n)
+
+
+def polygon2(n, a):
+    for x in range(n):
+        t.fd(a)
+        t.left(360 / n)
+
+
+polygon(3)
+polygon(5)
+
+t.up()
+t.fd(100)
+t.down()
+
+polygon2(3, 75)
+polygon2(5, 100)
