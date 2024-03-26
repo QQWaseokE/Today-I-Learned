@@ -1,25 +1,54 @@
+import turtle as t
 import random
-import time
 
-w = ["cat", "dog", "fox", "monkey", "mouse", "panda", "frog", "snake", "wolf"]
-n = 1
-print("[타자게임] 준비되면 엔터!")
-input()
-start = time.time()
 
-q = random.choice(w)
-while n <= 5:
-    print("문제", n)
-    print(q)
-    x = input()
-    if q == x:
-        print("PASS!")
-        n = n + 1
-        q = random.choice(w)
+def turn_up():
+    t.left(2)
+
+
+def turn_down():
+    t.right(2)
+
+
+def fire():
+    ang = t.heading()
+    while t.ycor() > 0:
+        t.forward(15)
+        t.right(5)
+
+    d = t.distance(target, 0)
+    t.sety(random.randint(10, 100))
+    if d < 25:
+        t.color("blue")
+        t.write("Good!", False, "center", ("", 15))
     else:
-        print("Wrong! Again!")
+        t.color("red")
+        t.write("Bad!", False, "center", ("", 15))
+    t.color("black")
+    t.goto(-200, 10)
+    t.setheading(ang)
 
-end = time.time()
-result = end - start
-result = format(result, ".2f")
-print("TIME:", result, "초")
+
+t.goto(-300, 0)
+t.down()
+t.goto(300, 0)
+
+target = random.randint(50, 150)
+t.pensize(3)
+t.color("green")
+t.up()
+t.goto(target - 25, 2)
+t.down()
+t.goto(target + 25, 2)
+
+t.color("black")
+t.up()
+t.goto(-200, 10)
+t.setheading(20)
+
+t.onkeypress(turn_up, "Up")
+t.onkeypress(turn_down, "Down")
+t.onkeypress(fire, "space")
+
+t.listen()
+t.mainloop()
