@@ -1,54 +1,60 @@
 import turtle as t
 import random
 
+te = t.Turtle()
+te.shape("turtle")
+te.color("red")
+te.speed(0)
+te.up()
+te.goto(0, 200)
+
+ts = t.Turtle()
+ts.shape("circle")
+ts.color("green")
+ts.speed(0)
+ts.up()
+ts.goto(0, -200)
+
+
+def turn_right():
+    t.setheading(0)
+
 
 def turn_up():
-    t.left(2)
+    t.setheading(90)
+
+
+def turn_left():
+    t.setheading(180)
 
 
 def turn_down():
-    t.right(2)
+    t.setheading(270)
 
 
-def fire():
-    ang = t.heading()
-    while t.ycor() > 0:
-        t.forward(15)
-        t.right(5)
-
-    d = t.distance(target, 0)
-    t.sety(random.randint(10, 100))
-    if d < 25:
-        t.color("blue")
-        t.write("Good!", False, "center", ("", 15))
-    else:
-        t.color("red")
-        t.write("Bad!", False, "center", ("", 15))
-    t.color("black")
-    t.goto(-200, 10)
-    t.setheading(ang)
+def play():
+    t.forward(10)
+    ang = te.towards(t.pos())
+    te.setheading(ang)
+    te.forward(9)
+    if t.distance(ts) < 12:
+        star_x = random.randint(-230, 230)
+        star_y = random.randint(-230, 230)
+        ts.goto(star_x, star_y)
+    if t.distance(te) >= 12:
+        t.ontimer(play, 100)
 
 
-t.goto(-300, 0)
-t.down()
-t.goto(300, 0)
-
-target = random.randint(50, 150)
-t.pensize(3)
-t.color("green")
+t.setup(500, 500)
+t.bgcolor("orange")
+t.shape("turtle")
+t.speed(0)
 t.up()
-t.goto(target - 25, 2)
-t.down()
-t.goto(target + 25, 2)
-
-t.color("black")
-t.up()
-t.goto(-200, 10)
-t.setheading(20)
-
+t.color("white")
+t.onkeypress(turn_right, "Right")
 t.onkeypress(turn_up, "Up")
+t.onkeypress(turn_left, "Left")
 t.onkeypress(turn_down, "Down")
-t.onkeypress(fire, "space")
-
 t.listen()
+play()
 t.mainloop()
