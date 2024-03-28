@@ -1,11 +1,17 @@
-import turtle as t
-import math as m
+def sum_n(n):
+    sum = n * (n + 1) / 2
 
-t.color("red")
-t.begin_fill()
-for x in range(100):
-    h = m.pi * x / 50
-    x = 160 * m.sin(h) ** 3
-    y = 130 * m.cos(h) - 60 * m.cos(2 * h) - 20 * m.cos(3 * h) - 10 * m.cos(4 * h)
-    t.goto(x, y)
-t.end_fill()
+    return sum
+
+
+print(sum_n(10))
+
+
+def sum_n2(n):
+    sum = 0
+    for x in range(1, n + 1):
+        sum = sum + x
+    return sum
+
+
+print(sum_n2(10))
