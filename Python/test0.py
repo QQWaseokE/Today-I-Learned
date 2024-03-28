@@ -1,37 +1,11 @@
 import turtle as t
+import math as m
 
-x_min = -5
-x_max = +5
-
-y_min = -5
-y_max = +5
-
-space = 0.1
-
-func_list = ("y=x*x", "y=abs(x)", "y=0.5*x+1")
-
-t.setworldcoordinates(x_min, y_min, x_max, y_max)
-t.speed(0)
-t.pensize(2)
-
-t.up()
-t.goto(x_min, 0)
-t.down()
-t.goto(x_max, 0)
-
-t.up()
-t.goto(0, y_min)
-t.down()
-t.goto(0, y_max)
-
-t.color("green")
-for func in func_list:
-    x = x_min
-    exec(func)
-    t.up()
+t.color("red")
+t.begin_fill()
+for x in range(100):
+    h = m.pi * x / 50
+    x = 160 * m.sin(h) ** 3
+    y = 130 * m.cos(h) - 60 * m.cos(2 * h) - 20 * m.cos(3 * h) - 10 * m.cos(4 * h)
     t.goto(x, y)
-    t.down()
-    while x <= x_max:
-        x = x + space
-        exec(func)
-        t.goto(x, y)
+t.end_fill()
