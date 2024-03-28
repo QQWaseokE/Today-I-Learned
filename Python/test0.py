@@ -1,12 +1,19 @@
-def find_min(a):
+# 두 번 이상 나온 이름 찾기
+# 입력 : 이름이 n개 들어 있는 리스트
+# 출력 : 이름 n개 중 반복되는 이름의 집합
+
+
+def find_same_name(a):
     n = len(a)
-    min = a[0]
+    result = set()
+    for i in range(0, n - 1):
+        for j in range(i + 1, n):
+            if a[i] == a[j]:
+                result.add(a[i])
+    return result
 
-    for x in range(1, n):
-        if min > a[x]:
-            min = a[x]
-    return min
 
-
-v = [17, 92, 18, 33, 58, 7, 33, 42]
-print(find_min(v))
+name = ["Tom", "Jerry", "Mike", "Tom"]
+print(find_same_name(name))
+name2 = ["Tom", "Jerry", "Mike", "Tom", "Mike"]
+print(find_same_name(name2))
