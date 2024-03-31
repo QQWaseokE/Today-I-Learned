@@ -1,10 +1,9 @@
 def fact(a):
-    if a <= 0:
-        return v[0]
-    return max(v[a], fact(a - 1))
+    if a == 1:
+        return 1
+    if a == 0:
+        return 0
+    return fact(a - 1) + fact(a - 2)
 
 
-v = [103, 92, 18, 33, 100, 7, 33, 42]
-n = len(v)
-r = n - 1
-print(fact(r))
+print(fact(10))
