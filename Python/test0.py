@@ -1,28 +1,22 @@
-# 재귀 호출을 이용한 시에르핀스키(sierpinski)의 삼각형 그리기
+# 재귀 호출을 이용한 눈꽃 그리기
 import turtle as t
 
 
-def tri(tri_len):
-    if tri_len <= 10:
-        for i in range(0, 3):
-            t.forward(tri_len)
-            t.left(120)
+def tree(br_len):
+    if br_len <= 5:
         return
-    new_len = tri_len / 2
-    tri(new_len)
-    t.forward(new_len)
-    tri(new_len)
-    t.backward(new_len)
-    t.left(60)
-    t.forward(new_len)
-    t.right(60)
-    tri(new_len)
-    t.left(60)
-    t.backward(new_len)
-    t.right(60)
+    new_len = br_len * 0.7
+    t.forward(br_len)
+    t.right(20)
+    tree(new_len)
+    t.left(40)
+    tree(new_len)
+    t.right(20)
+    t.backward(br_len)
 
 
 t.speed(0)
-tri(160)
+t.left(90)
+tree(70)
 t.hideturtle()
 t.done()
