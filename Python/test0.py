@@ -2,21 +2,25 @@
 import turtle as t
 
 
-def tree(br_len):
-    if br_len <= 5:
+def snow_line(snow_len):
+    if snow_len <= 10:
+        t.forward(snow_len)
         return
-    new_len = br_len * 0.7
-    t.forward(br_len)
-    t.right(20)
-    tree(new_len)
-    t.left(40)
-    tree(new_len)
-    t.right(20)
-    t.backward(br_len)
+    new_len = snow_len / 3
+    snow_line(new_len)
+    t.left(60)
+    snow_line(new_len)
+    t.right(120)
+    snow_line(new_len)
+    t.left(60)
+    snow_line(new_len)
 
 
 t.speed(0)
-t.left(90)
-tree(70)
+snow_line(150)
+t.right(120)
+snow_line(150)
+t.right(120)
+snow_line(150)
 t.hideturtle()
 t.done()
