@@ -1,26 +1,18 @@
-# 재귀 호출을 이용한 눈꽃 그리기
-import turtle as t
+# 리스트에서 특정 숫자의 위치 찾기
+# 입력 ; 리스트 a, 찾는 값 x
+# 출력 : 찾으면 그 값의 위치, 찾지 못하면 -1
 
 
-def snow_line(snow_len):
-    if snow_len <= 10:
-        t.forward(snow_len)
-        return
-    new_len = snow_len / 3
-    snow_line(new_len)
-    t.left(60)
-    snow_line(new_len)
-    t.right(120)
-    snow_line(new_len)
-    t.left(60)
-    snow_line(new_len)
+def search_list(a, x):
+    n = len(a)
+    for i in range(0, n):
+        if x == a[i]:
+            return i
+
+    return -1
 
 
-t.speed(0)
-snow_line(150)
-t.right(120)
-snow_line(150)
-t.right(120)
-snow_line(150)
-t.hideturtle()
-t.done()
+v = [17, 92, 18, 33, 58, 7, 33, 42]
+print(search_list(v, 18))
+print(search_list(v, 33))
+print(search_list(v, 900))
