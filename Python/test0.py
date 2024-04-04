@@ -4,12 +4,13 @@
 
 
 def search_list(a, x):
+    list = []
     n = len(a)
     for i in range(0, n):
         if x == a[i]:
-            return i
+            list.append(i)
 
-    return -1
+    return list
 
 
 v = [17, 92, 18, 33, 58, 7, 33, 42]
