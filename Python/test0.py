@@ -1,15 +1,20 @@
-def search_list(a, b, x):
+def fine_min_dix(a):
     n = len(a)
-    for i in range(0, n):
-        if x == a[i]:
-            return stu_name[i]
+    min_idx = 0
+    for i in range(1, n):
+        if a[i] < a[min_idx]:
+            min_idx = i
+    return min_idx
 
-    return "?"
+
+def sel_sort(a):
+    result = []
+    while a:
+        min_idx = fine_min_dix(a)
+        value = a.pop(min_idx)
+        result.append(value)
+    return result
 
 
-stu_no = [39, 14, 67, 105]
-stu_name = ["Justin", "John", "Mike", "Summer"]
-
-print(search_list(stu_no, stu_name, 39))
-print(search_list(stu_no, stu_name, 67))
-print(search_list(stu_no, stu_name, 100))
+d = [2, 4, 5, 1, 3]
+print(sel_sort(d))
