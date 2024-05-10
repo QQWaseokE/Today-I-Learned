@@ -1,3 +1,1 @@
-sum += list[i]
-
-    # print(sum)
+n = int(input())
