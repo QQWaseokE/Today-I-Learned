@@ -1,40 +1,24 @@
-def merge_sort(a):
-    n = len(a)
+# 리스트에서 특정 숫자 위치 찾기(이분 탐색)
+# 입력 : 리스트 a, 찾는 값 x
+# 출력 : 찾으면 그 값의 위치, 찾지 못하면 -1
 
-    if n <= 1:
-        return a
 
-    mid = n // 2
-    g1 = a[:mid]
-    g2 = a[mid:]
-    merge_sort(g1)
-    merge_sort(g2)
+def binary_search(a, x):
+    start = 0
+    end = len(a) - 1
 
-    i1 = 0
-    i2 = 0
-    ia = 0
-
-    while i1 < len(g1) and i2 < len(g2):
-        if g1[i1] > g2[i2]:
-            a[ia] = g1[i1]
-            i1 += 1
-            ia += 1
+    while start <= end:
+        mid = (start + end) // 2
+        if x == a[mid]:
+            return mid
+        elif x > a[mid]:
+            start = mid + 1
         else:
-            a[ia] = g2[i2]
-            i2 += 1
-            ia += 1
+            end = mid - 1
 
-    while i1 < len(g1):
-        a[ia] = g1[i1]
-        i1 += 1
-        ia += 1
-
-    while i2 < len(g2):
-        a[ia] = g2[i2]
-        i2 += 1
-        ia += 1
+    return -1
 
 
-d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
-merge_sort(d)
-print(d)
+d = [1, 4, 9, 16, 25, 36, 49, 64, 81]
+print(binary_search(d, 36))
+print(binary_search(d, 50))
