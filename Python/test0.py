@@ -1,21 +1,18 @@
-def binary_search_sub(a, x, start, end):
-    if start > end:
-        return -1
+def palindrome(s):
+    qu = []
+    st = []
 
-    mid = (start + end) // 2
+    for x in s:
+        if x.isalpha():
+            qu.append(x.lower())
+            st.append(x.lower())
+    while qu:
+        if qu.pop(0) != st.pop():
+            return False
 
-    if x == a[mid]:
-        return mid
-    elif x > a[mid]:
-        return binary_search_sub(a, x, mid + 1, end)
-    else:
-        return binary_search_sub(a, x, start, mid - 1)
-
-
-def binary_search(a, x):
-    return binary_search_sub(a, x, 0, len(a) - 1)
+    return True
 
 
-d = [1, 4, 9, 16, 25, 36, 49, 64, 81]
-print(binary_search(d, 36))
-print(binary_search(d, 50))
+print(palindrome("Wow"))
+print(palindrome("Madam, I'm Adam."))
+print(palindrome("Madam, I am Adam."))
