@@ -1,16 +1,18 @@
 def palindrome(s):
-    qu = []
-    st = []
+    str_list = []
 
     for x in s:
         if x.isalpha():
-            qu.append(x.lower())
-            st.append(x.lower())
-    while qu:
-        if qu.pop(0) != st.pop():
-            return False
+            str_list.append(x.lower())
 
-    return True
+    while str_list:
+        n = len(str_list)
+
+        if n == 1 or n == 0:
+            return True
+        else:
+            if str_list.pop(0) != str_list.pop():
+                return False
 
 
 print(palindrome("Wow"))

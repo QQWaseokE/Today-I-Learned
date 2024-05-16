@@ -1,8 +1,5 @@
- # if x == a[mid]:
-    #     return mid
-    # elif x > a[mid]:
-    #     binary_search(a[mid:], x)
-    # else:
-    #     binary_search(a[:mid], x)
+while qu:
+    #     if qu.pop(0) != st.pop():
+    #         return False
 
-    # return -1
+    # return True
