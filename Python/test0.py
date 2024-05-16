@@ -1,18 +1,22 @@
 def palindrome(s):
-    str_list = []
+    i = 0
+    j = len(s) - 1
 
-    for x in s:
-        if x.isalpha():
-            str_list.append(x.lower())
+    while i < j:
+        if s[i].isalpha() == False:
+            i += 1
 
-    while str_list:
-        n = len(str_list)
+        elif s[j].isalpha() == False:
+            j -= 1
 
-        if n == 1 or n == 0:
-            return True
+        elif s[i].lower() != s[j].lower():
+            return False
+
         else:
-            if str_list.pop(0) != str_list.pop():
-                return False
+            i += 1
+            j -= 1
+
+    return True
 
 
 print(palindrome("Wow"))
