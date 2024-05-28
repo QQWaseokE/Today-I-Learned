@@ -1,25 +1,30 @@
-def find_name(a):
-    name_dict = {39: "Justin", 14: "John", 67: "Mike", 105: "Summer"}
+def print_all_friends(g, start):
+    qu = []
+    done = set()
 
-    if a in name_dict:
-        return name_dict[a]
+    qu.append(start)
+    done.add(start)
 
-    else:
-        return "?"
-
-    # for name in a:
-    #     if name in name_dict:
-    #         name_dict[name] += 1
-    #     else:
-    #         name_dict[name] = 1
-
-    # result = set()
-    # for name in name_dict:
-    #     if name_dict[name] >= 2:
-    #         result.add(name)
-
-    # return result
+    while qu:
+        p = qu.pop(0)
+        print(p)
+        for x in g[p]:
+            if x not in done:
+                qu.append(x)
+                done.add(x)
 
 
-n = int(input())
-print(find_name(n))
+fr_info = {
+    "Summer": ["John", "Justin", "Mike"],
+    "John": ["Summer", "Justin"],
+    "Justin": ["John", "Summer", "Mike", "May"],
+    "Mike": ["Summer", "Justin"],
+    "May": ["Justin", "Kim"],
+    "Kim": ["May"],
+    "Tom": ["Jerry"],
+    "Jerry": ["Tom"],
+}
+
+print_all_friends(fr_info, "Summer")
+print()
+print_all_friends(fr_info, "Jerry")
