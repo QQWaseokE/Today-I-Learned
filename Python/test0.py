@@ -1,24 +1,21 @@
-def palindrome(s):
-    i = 0
-    j = len(s) - 1
-
-    while i < j:
-        if s[i].isalpha() == False:
-            i += 1
-
-        elif s[j].isalpha() == False:
-            j -= 1
-
-        elif s[i].lower() != s[j].lower():
-            return False
-
+def find_same_name(a):
+    name_dict = {}
+    for name in a:
+        if name in name_dict:
+            name_dict[name] += 1
         else:
-            i += 1
-            j -= 1
+            name_dict[name] = 1
 
-    return True
+    result = set()
+    for name in name_dict:
+        if name_dict[name] >= 2:
+            result.add(name)
+
+    return result
 
 
-print(palindrome("Wow"))
-print(palindrome("Madam, I'm Adam."))
-print(palindrome("Madam, I am Adam."))
+name = ["Tom", "Jerry", "Mike", "Tom"]
+print(find_same_name(name))
+
+name2 = ["Tom", "Jerry", "Mike", "Tom", "Mike"]
+print(find_same_name(name2))
