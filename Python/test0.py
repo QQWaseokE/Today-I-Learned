@@ -1,16 +1,16 @@
 def print_all_friends(g, start):
     qu = []
     done = set()
+    qu.append((start, 0))
 
-    qu.append(start)
     done.add(start)
 
     while qu:
-        p = qu.pop(0)
-        print(p)
+        (p, d) = qu.pop(0)
+        print(p, d)
         for x in g[p]:
             if x not in done:
-                qu.append(x)
+                qu.append((x, d + 1))
                 done.add(x)
 
 
