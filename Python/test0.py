@@ -1,44 +1,15 @@
-# def solve_maza(g, start, end):
-#     qu = []
-#     done = set()
-#     qu.append(start)
-#     done.add(start)
+def max_profit(prices):
+    n = len(prices)
+    max_profit = 0
 
-#     while qu:
-#         p = qu.pop(0)
-#         v = p[-1]
-#         if v == end:
-#             return p
-#         for x in g[v]:
-#             if x not in done:
-#                 qu.append(p + x)
-#                 done.add(x)
+    for i in range(0, n - 1):
+        for j in range(i + 1, n):
+            profit = prices[j] - prices[i]
+            if profit > max_profit:
+                max_profit = profit
 
-#     return "?"
+    return max_profit
 
 
-# maze = {
-#     "a": ["e"],
-#     "b": ["c", "f"],
-#     "c": ["b", "d"],
-#     "d": ["c"],
-#     "e": ["a", "i"],
-#     "f": ["b", "g", "j"],
-#     "g": ["f", "h"],
-#     "h": ["g", "l"],
-#     "i": ["e", "m"],
-#     "j": ["f", "k", "n"],
-#     "k": ["j", "o"],
-#     "l": ["h", "p"],
-#     "m": ["i", "n"],
-#     "n": ["m", "j"],
-#     "o": ["k"],
-#     "p": ["l"],
-# }
-# print(solve_maza(maze, "a", "p"))
-
-
-n = "abcdefg"
-v = n[-1]
-
-print(v)
+stock = [10300, 9600, 9800, 8200, 7800, 8300, 9500, 9800, 10200, 9500]
+print(max_profit(stock))
