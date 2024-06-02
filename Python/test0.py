@@ -1,19 +1,38 @@
-def print_all_friends(g, start):
+def solve_maza(g, start, end):
     qu = []
     done = set()
-
     qu.append(start)
     done.add(start)
 
     while qu:
         p = qu.pop(0)
-        print(p)
-        for x in g[p]:
+        v = p[-1]
+        if v == end:
+            return p
+        for x in g[v]:
             if x not in done:
-                qu.append(x)
+                qu.append(p + x)
                 done.add(x)
 
+    return "?"
 
-fr_info = {1: [2, 3], 2: [1, 4, 5], 3: [1], 4: [2], 5: [2]}
 
-print_all_friends(fr_info, 1)
+maze = {
+    "a": ["e"],
+    "b": ["c", "f"],
+    "c": ["b", "d"],
+    "d": ["c"],
+    "e": ["a", "i"],
+    "f": ["b", "g", "j"],
+    "g": ["f", "h"],
+    "h": ["g", "l"],
+    "i": ["e", "m"],
+    "j": ["f", "k", "n"],
+    "k": ["j", "o"],
+    "l": ["h", "p"],
+    "m": ["i", "n"],
+    "n": ["m", "j"],
+    "o": ["k"],
+    "p": ["l"],
+}
+print(solve_maza(maze, "a", "p"))
