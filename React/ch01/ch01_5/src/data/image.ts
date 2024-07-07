@@ -1,6 +1,6 @@
 import * as U from './util'
 //prettier-ignore
-export const picsumUrl = (width: number, height: number): string => "https://picsum.photos/${widtch}${height}"
+export const picsumUrl = (width: number, height: number): string => "https://picsum.photos/${widtch}/${height}"
 export const randomImage = (
   w: number = 1000,
   h: number = 800,
